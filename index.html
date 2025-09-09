@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Results summary component</title>
+
+    <style>
+      body {
+        background-color: hsl(221, 100%, 96%);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+        min-height: 100vh;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        overflow: hidden;
+      }
+      .left-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(
+          hsl(252, 100%, 67%),
+          hsl(241, 81%, 54%)
+        );
+        padding: 30px;
+        height: 330px;
+        width: 250px;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .right-div {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        padding: 30px;
+        height: 330px;
+        width: 250px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        justify-content: space-evenly;
+      }
+      .right-div h3 {
+        margin-top: -85px;
+        margin-bottom: 30px;
+        font-weight: 600;
+      }
+      .common {
+        margin-top: -90px;
+      }
+
+      .reactions {
+        background-color: hsl(0, 75%, 87%);
+        display: flex;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        color: hsl(0, 100%, 67%);
+      }
+      .memories {
+        background-color: hsl(39, 93%, 84%);
+        padding: 10px;
+        display: flex;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        color: hsl(39, 100%, 56%);
+      }
+      .verbals {
+        background-color: hsl(166, 40%, 88%);
+        padding: 10px;
+        display: flex;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        color: hsl(166, 100%, 37%);
+      }
+      .visuals {
+        background-color: hsl(234, 94%, 86%);
+        padding: 10px;
+        display: flex;
+        margin-bottom: -40px;
+        border-radius: 10px;
+        color: hsl(234, 85%, 45%);
+      }
+      .reaction {
+        margin-left: 8px;
+        margin-right: 50px;
+      }
+      .memory {
+        margin-left: 8px;
+        margin-right: 55px;
+      }
+      .verbal {
+        margin-left: 8px;
+        margin-right: 70px;
+      }
+      .visual {
+        margin-left: 8px;
+        margin-right: 75px;
+      }
+      button {
+        margin-bottom: -70px;
+        padding: 14px;
+        border: none;
+        border-radius: 20px;
+        background-color: hsl(236, 36%, 25%);
+        color: white;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: hsl(241, 100%, 30%);
+      }
+
+      .circle {
+        background: linear-gradient(
+          hsla(256, 72%, 46%, 1),
+          hsla(241, 72%, 46%, 0)
+        );
+        border-radius: 50%;
+        color: white;
+        height: 150px;
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+      }
+      .left-div h1 {
+        font-size: 50px;
+        margin: 0px;
+        margin-bottom: -10px;
+      }
+      .of-100 {
+        margin-top: 0px;
+        color: rgb(183, 183, 183);
+        font-size: 14px;
+      }
+
+      .left-div p {
+        margin-top: 10px;
+      }
+      .left-div h2 {
+        color: white;
+        margin-bottom: 5px;
+        font-weight: 550;
+      }
+      .left-div {
+        color: rgb(183, 183, 183);
+      }
+      #info {
+        font-size: 14px;
+      }
+      .left-div h3 {
+        margin: 0;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-div">
+        <h3>Your Result</h3>
+        <div class="circle">
+          <h1>76</h1>
+          <p class="of-100">of 100</p>
+        </div>
+        <h2>Great</h2>
+        <p id="info">
+          You scored higher than 65% of<br />
+          the people who have taken<br />
+          these tests.
+        </p>
+      </div>
+      <div class="right-div">
+        <h3>Summary</h3>
+        <div class="common">
+          <div class="reactions">
+            <img src="assets/images/icon-reaction.svg" />
+            <span class="reaction">Reaction</span>
+            <span>80 / 100 </span>
+          </div>
+
+          <div class="memories">
+            <img src="assets/images/icon-memory.svg" />
+            <span class="memory"> Memory </span>
+            <span>92 / 100</span>
+          </div>
+
+          <div class="verbals">
+            <img src="assets/images/icon-verbal.svg" />
+            <span class="verbal"> Verbal</span>
+            <span>61 / 100 </span>
+          </div>
+
+          <div class="visuals">
+            <img src="assets/images/icon-visual.svg" />
+            <span class="visual">Visual</span>
+            <span>72 / 100</span>
+          </div>
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
